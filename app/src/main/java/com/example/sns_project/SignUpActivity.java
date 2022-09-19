@@ -50,6 +50,9 @@ public class SignUpActivity extends AppCompatActivity {
 
         String email = ((EditText)findViewById(R.id.emailEditText)).getText().toString();
         String password = ((EditText)findViewById(R.id.passwordEditText)).getText().toString();
+        String passwordCheck = ((EditText)findViewById(R.id.passwordCheckEditText)).getText().toString();
+
+
 
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
